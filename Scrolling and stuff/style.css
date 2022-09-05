@@ -1,0 +1,136 @@
+*{
+  box-sizing: border-box;
+}
+
+:root{
+  scroll-behavior: smooth ;
+}
+
+body{
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.hero{
+  margin-top: 3em;
+  height:40vh;
+  position: relative;
+  padding: 5rem 0;
+  z-index: -1;
+}
+
+.hero::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .9;
+  background-image: url("image/Japan_fuji.jpg") ;
+}
+
+.main-title{
+  font-size: 2.25rem;
+  font-family: Serif;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+.title{
+  font-size: 1.75rem;
+  color: #02689c;
+  text-align: center;
+}
+
+main{
+  padding: 3em 0;
+}
+
+footer{
+  background: #104d69;
+  padding: 2em;
+  color: white;
+}
+
+main article{
+  height: 60vh;
+}
+
+nav{
+  transform: translateX(-100vw);
+  position: fixed;
+  width: 100%;
+  padding: 1em;
+  top: 0;
+  background: white;
+  height: 100vh;
+  transition: transform .5s ease-in-out;
+  min-height: 100vh;
+}
+
+.show-menu{
+  transform: translateX(0);
+}
+
+nav ul{
+  padding:0;
+  list-style: none;
+}
+
+nav a{
+  text-decoration: none;
+  color: rgb(19,141,7);
+}
+
+nav li{
+  margin: .5em 0;
+}
+
+nav a:hover{
+  color: black;
+}
+
+.navbar{
+  background: white;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  transition: background .5s ease-in-out;
+}
+
+.logo{
+  float: right;
+  margin: .2em;
+  width: 13%;
+}
+
+.menu-btn{
+  color: black;
+  transform: rotate(90deg);
+  border: 0;
+  padding: 0;
+  margin: .3em .5em;
+  border-radius: 20%;
+  background: transparent;
+  font-size: 2rem;
+}
+
+.menu-btn:active, .exit-btn:active{
+  background-color: darkgrey;
+}
+
+.exit-btn{
+  /*float: right;*/
+  transform: translateX(80vw);
+  font-size: 2rem;
+  border: 0;
+  margin: 0 .4em;
+  padding: 0 .2em;
+  background: transparent;
+  color: #960202;
+}
