@@ -1,0 +1,109 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-size: 1rem;
+  background: #e7eaeb;
+}
+
+img{
+  width: 100%;
+}
+
+
+/*typography*/
+h1{
+  font-size: 2.3rem;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.tab-btn{
+  border: 0;
+  margin-left: .2em;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  background: #cad3d5;
+  color: #383c40;
+  font-size: 1.3rem;
+}
+
+.tab-btn:first-child{
+  margin: 0;
+}
+
+.active{
+  background: white;
+}
+
+.caption{
+  margin-top:.5em;
+}
+
+
+/*layout*/
+.container{
+  width: 95%;
+  margin: 0 auto;
+}
+
+.container-btn{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.posts{
+  margin: 1.5em 0;
+}
+
+.srch-result{
+  padding: 2em 0.5em;
+  background: #cad3d5;
+}
+
+.posts, .lists, .users{
+  display: none;
+}
+
+.curr-content{
+  display: block;
+}
+
+.post-img{
+  border-radius: .8em;
+}
+
+.list{
+  margin: 2em 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-body{
+  width: 75%;
+  margin: 0;
+}
+
+.list-img{
+  width: 20%;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 20%;
+}
+
+.user{
+  margin: 2em 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.users-body{
+  font-weight: bolder;
+  margin-top: .3em;
+}
+
+.pfp{
+  border-radius: 80%;
+}
