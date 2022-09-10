@@ -18,3 +18,8 @@ Here I will keep track of all the projects in this repo.
 ## sidebar
 
 - This is just an early study of how to create a basic sidebar menu.
+
+## tabs
+
+- Trying to create tabs that appear when you search something on a social media platform.
+- It has three tabs, mainly posts, users and lists.
